@@ -30,7 +30,7 @@ while True:
         verbose=True,
         tools=code_interpreter_tools,
         llm=llm,
-        max_rpm=5
+        max_rpm=15
     )
     
     sql_agent = Agent(
@@ -47,7 +47,7 @@ while True:
         tools=sql_tools,
         llm=llm,
         allow_delegation=True,
-        max_rpm=5
+        max_rpm=15
     )
     
     code_interpreter_task = Task(
